@@ -1,18 +1,18 @@
-FROM python:2.7.12-slim
+FROM golang:1.6-onbuild
 
 MAINTAINER linwei.hou <linwei.hou@baifendian.com>
 
-LABEL desc="build my first django environment"
+LABEL desc="build my first golang application"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 			fortune
 
-ENV DJANGO_VERION=1.10
+# ENV DJANGO_VERION=1.10
 
-ADD . /opt/
+# ADD . /opt/
 
-WORKDIR /opt
+# WORKDIR /opt
 
-RUN pip install django==DJANGO_VERION
+# RUN pip install django==DJANGO_VERION
 
-CMD ["python"]
+# CMD ["python"]
