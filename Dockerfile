@@ -1,11 +1,11 @@
-FROM golang:1.6-onbuild
+FROM golang:1.7.3
 
 MAINTAINER linwei.hou <linwei.hou@baifendian.com>
 
 LABEL desc="build my first golang application"
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-			fortune
+# RUN apt-get update && apt-get install -y --no-install-recommends \
+# 			fortune
 
 # ENV DJANGO_VERION=1.10
 
