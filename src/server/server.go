@@ -22,5 +22,6 @@ func main() {
 }
 
 func IndexHandler(w http.ResponseWriter, r *http.Request){
+	w.Write([]byte(r.RequestURI))
 	w.Write([]byte(`hello world!`))
 }
